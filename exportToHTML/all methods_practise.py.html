@@ -1,0 +1,211 @@
+<html>
+<head>
+<title>all methods_practise.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #8c8c8c; font-style: italic;}
+.s1 { color: #080808;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+all methods_practise.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># l1=[1,56,8,9,1,4,20,33,65,98,10,11]</span>
+<span class="s0"># print(l1[2:5])</span>
+<span class="s0"># print(l1[:8])</span>
+<span class="s0"># l1=[1,56,8,9,1,4,[20,33,65],98,10,11]</span>
+<span class="s0"># print(l1[6])</span>
+<span class="s0"># print(l1[6][1])</span>
+<span class="s0"># l1=[1,56,8,9,1,4,20,33,65,98,10,11]</span>
+<span class="s0"># if 8 in l1:</span>
+<span class="s0">#     print('yes')</span>
+<span class="s0">#changing specific value</span>
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># l1[3]=44</span>
+<span class="s0"># print(l1)</span>
+
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># print(l1[3])</span>
+<span class="s0"># l1.insert(3,33)</span>
+<span class="s0"># print(l1)</span>
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># l2=[100,102,103,601,105]</span>
+<span class="s0"># for i in l2:</span>
+<span class="s0">#     l1.append(i)</span>
+<span class="s0"># print(l1)</span>
+<span class="s0">#remove</span>
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># print(l1)</span>
+<span class="s0"># l1.remove(41)</span>
+<span class="s0"># print(l1)</span>
+
+<span class="s0">#pop</span>
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># print(l1.pop())</span>
+<span class="s0"># print(l1)</span>
+
+
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># while l1:</span>
+<span class="s0">#     l1.pop()</span>
+<span class="s0">#     print(l1)</span>
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># l1.clear()</span>
+<span class="s0"># print</span>
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># l1.extend({'venk','naveen'})</span>
+<span class="s0"># print(l1)</span>
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># l1.sort(reverse=True)</span>
+<span class="s0"># print(l1)</span>
+<span class="s0"># l1=[2,54,51,41,6,22,13,45]</span>
+<span class="s0"># l1.reverse()</span>
+<span class="s0"># print(l1)</span>
+<span class="s0"># print(l1.count(2))</span>
+<span class="s0"># print(l1.index(41))</span>
+<span class="s0"># print(l1[2])</span>
+
+<span class="s0">#DICTIONARY METHODS</span>
+
+<span class="s0">#creatina empty dictionary</span>
+<span class="s0"># dict_1 = {}</span>
+<span class="s0"># print(dict_1)</span>
+<span class="s0"># dict_2 = dict()</span>
+<span class="s0"># # #dict_3 = {&quot;name&quot;: 'venkata', &quot;age&quot;: 28, &quot;place&quot;: &quot;krpuram &quot;}</span>
+<span class="s0"># # print((dict_2))</span>
+<span class="s0"># dict_2.update([(&quot;name&quot;,&quot;venkata&quot;),(&quot;place&quot;,&quot;krpuram&quot;)])</span>
+<span class="s0"># print(dict_2)</span>
+<span class="s0"># Dict_1 = dict([(1,'a'), (2, 'b')]) #{1: 'a', 2: 'b'}</span>
+<span class="s0"># print(Dict_1)</span>
+
+<span class="s0"># it is not adviced to pass list of lists as iterables in update method</span>
+
+<span class="s0"># my_dict = {}</span>
+<span class="s0"># my_dict.update([[&quot;name&quot;, &quot;John&quot;], [&quot;age&quot;, 25], [&quot;city&quot;, &quot;New York&quot;]])</span>
+<span class="s0"># print(my_dict)</span>
+<span class="s0"># '''The update method in Python expects an iterable of key-value pairs, typically in the form of tuples.</span>
+<span class="s0"># When you pass a list of lists to update, it doesn't interpret the inner lists as key-value pairs automatically, leading to unexpected</span>
+<span class="s0">#   behavior.</span>
+<span class="s0">#</span>
+<span class="s0"># In your case, you can pass a list of tuples or use a dictionary directly. Here are both approaches:'''</span>
+<span class="s0"># my_dict = {}</span>
+<span class="s0"># my_dict.update({&quot;name&quot;: &quot;John&quot;,&quot;age&quot;: 25, &quot;city&quot;:&quot;New York&quot;})</span>
+<span class="s0"># print(my_dict)</span>
+
+<span class="s0">#METHODS</span>
+
+<span class="s0"># dict_1 = {&quot;name&quot;: &quot;venkata&quot;,</span>
+<span class="s0">#           &quot;place&quot;: &quot;krpuram&quot;,</span>
+<span class="s0">#           &quot;emp_id&quot;: &quot;0464700&quot;,</span>
+<span class="s0">#           &quot;branch&quot;: &quot;civil&quot;</span>
+<span class="s0">#           }</span>
+<span class="s0"># print(dict_1.get(&quot;name&quot;))</span>
+<span class="s0"># print(type(dict_1.get(&quot;name&quot;))) #string</span>
+
+<span class="s0">#print(dict_1.keys()) # dict_keys(['name', 'place', 'emp_id', 'branch']) keys are retrived in the form of list</span>
+<span class="s0">#print(dict_1.values()) # dict_values(['venkata', 'krpuram', '0464700', 'civil'])</span>
+<span class="s0">#print(dict_1.items()) #dict_items([('name', 'venkata'), ('place', 'krpuram'), ('emp_id', '0464700'), ('branch', 'civil')])</span>
+<span class="s0"># items will be retrieved in the form of tuples in list</span>
+
+<span class="s0"># dict_2 = dict()</span>
+<span class="s0"># print(dict_2.fromkeys([&quot;venkata&quot;,&quot;krpuran&quot;,&quot;tpg&quot;]))#{'venkata': None, 'krpuran': None, 'tpg': None}</span>
+<span class="s0">#</span>
+<span class="s0"># print(dict_2.fromkeys((&quot;venkata&quot;,&quot;krpuran&quot;,&quot;tpg&quot;),1)) #{'venkata': 1, 'krpuran': 1, 'tpg': 1}</span>
+<span class="s0"># '''Creates a new dictionary from the given iterable (string, list, set, tuple) as keys and with the specified value.'''</span>
+<span class="s0"># dict_1 = {&quot;name&quot;: &quot;venkata&quot;,</span>
+<span class="s0">#           &quot;place&quot;: &quot;krpuram&quot;,</span>
+<span class="s0">#           &quot;emp_id&quot;: &quot;0464700&quot;,</span>
+<span class="s0">#           &quot;branch&quot;: &quot;civil&quot;</span>
+<span class="s0">#           }</span>
+<span class="s0"># for i in dict_1:# by default we get keys but it is not adviced</span>
+<span class="s0">#     print(i)</span>
+<span class="s0"># for i in dict_1.keys():</span>
+<span class="s0">#     print(i)</span>
+<span class="s0"># print(type(i))</span>
+<span class="s0"># for val in dict_1.values():</span>
+<span class="s0">#     print(val)</span>
+<span class="s0"># for key,val in dict_1.items():</span>
+<span class="s0">#     print(key,val)</span>
+<span class="s0"># dict_1.update([(&quot;branch&quot;,200)])</span>
+<span class="s0"># print(dict_1)</span>
+<span class="s0">#setdefault</span>
+
+<span class="s0"># dict_1 = {&quot;name&quot;: &quot;venkata&quot;,</span>
+<span class="s0">#           &quot;place&quot;: &quot;krpuram&quot;,</span>
+<span class="s0">#           &quot;emp_id&quot;: &quot;0464700&quot;,</span>
+<span class="s0">#           &quot;branch&quot;: &quot;civil&quot;</span>
+<span class="s0">#           }</span>
+<span class="s0"># # dict_1.update({&quot;college&quot;,&quot;jntuk&quot;})</span>
+<span class="s0"># # print(dict_1)</span>
+<span class="s0"># print(dict_1.setdefault(&quot;temple&quot;,200))</span>
+<span class="s0"># '''simalar to get method, bt it throws none when key is not found,we can</span>
+<span class="s0"># give default value if no value is found it returns tht value'''</span>
+<span class="s0"># print(dict_1)</span>
+
+<span class="s0"># dict_1 = {&quot;name&quot;: &quot;venkata&quot;,</span>
+<span class="s0">#           &quot;place&quot;: &quot;krpuram&quot;,</span>
+<span class="s0">#           &quot;emp_id&quot;: &quot;0464700&quot;,</span>
+<span class="s0">#           &quot;branch&quot;: &quot;civil&quot;</span>
+<span class="s0">#           }</span>
+<span class="s0"># (dict_1.setdefault(&quot;college&quot;,&quot;anits&quot;))</span>
+<span class="s0"># dict_1.update([(&quot;course&quot;,'civil'),(&quot;specialization&quot;,&quot;geotech&quot;)])</span>
+<span class="s0"># # dict_1.pop('place')</span>
+<span class="s0"># # print(dict_1)</span>
+<span class="s0"># print(dict_1)</span>
+<span class="s0"># dict_1.popitem()</span>
+<span class="s0"># print(dict_1)</span>
+
+<span class="s0">#NESTED DICTIONARY</span>
+<span class="s0"># dicti_1 = {1: {'roll': '101', 'name': 'sam'}, 2: {'roll': '102', 'name': 'ram'}}</span>
+<span class="s0"># #print(dicti_1[2][&quot;roll&quot;])</span>
+<span class="s0"># # roll_dict = dicti_1.get(2)</span>
+<span class="s0"># # for i,val in roll_dict.items():</span>
+<span class="s0"># #     if i == 'roll':</span>
+<span class="s0"># #         print(val)</span>
+<span class="s0"># roll_val = dicti_1.get(2, {})</span>
+<span class="s0"># if 'roll'in roll_val:</span>
+<span class="s0">#     value = roll_val[&quot;roll&quot;]</span>
+<span class="s0">#     print(value)</span>
+<span class="s0"># # else:</span>
+<span class="s0"># #     print(&quot;key not found&quot;)</span>
+
+<span class="s0"># 1. Adding one pair at a time</span>
+<span class="s0">#dict_3 = {}</span>
+<span class="s0"># dict_3[0] = 'a'</span>
+<span class="s0"># dict_3[1] = 'b'</span>
+<span class="s0"># print(dict_3)</span>
+<span class="s0"># dict_4 = dict([(1,&quot;VENKATA&quot;),(&quot;age&quot;,28),(&quot;anits&quot;,&quot;vizag&quot;)])</span>
+<span class="s0"># print(dict_4)</span>
+<span class="s0"># dict_1 = {}</span>
+<span class="s0"># for num in range(1,10):</span>
+<span class="s0">#     dict_1[num] = (num*num)</span>
+<span class="s0"># print(dict_1)</span>
+
+<span class="s0">#list to dictionary</span>
+
+<span class="s0"># list_1 = [1, 25, 32, 65, 9, 41, 22, 13]</span>
+<span class="s0"># dict_1 = {}</span>
+<span class="s0"># for i in range(len(list_1)-1):</span>
+<span class="s0">#     dict_1[f&quot;key_{i}&quot;] = list_1[i]</span>
+<span class="s0"># print(dict_1)</span>
+
+<span class="s0">#Create a list of tuples from the dictionary</span>
+
+<span class="s0"># dict_1 = {1: 'a', 2: 'b', 3: 'c'}</span>
+<span class="s0"># list_1 = list(dict_1.items())</span>
+<span class="s0"># print(type(list_1))</span>
+
+<span class="s0">#How can you delete key-value pair from Dictionary?</span>
+<span class="s0"># dict_1 = {1: 'a', 2: 'b', 3: 'c'}</span>
+<span class="s0"># del dict_1[3]</span>
+<span class="s0"># print(dict_1)</span>
+<span class="s0"># print(dict_1.pop(3)) # need to pass key</span>
+<span class="s0"># print(dict_1)</span>
+<span class="s0"># print(dict_1.popitem()) # dont need to pass any key automatically removes last item</span>
+<span class="s0"># print(dict_1)</span>
+</pre>
+</body>
+</html>
